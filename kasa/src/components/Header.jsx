@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import logo from "./assets/logo/logo-pink.png"
+import logo from "../assets/logo/logo-pink.png"
 
 function Header() {
     return (
-        <div className="Header">
+        <header>
             <div className="logo">
                 <img src={logo} />
             </div>
@@ -11,10 +11,10 @@ function Header() {
             <div className= "navbar" >
                 <nav>
                 <Link to="/" > Accueil </Link>
-                < Link to = "/A-propos" > A propos </Link>
+                <Link to = "/A-propos" > A propos </Link>
                 </nav>
             </div>
-        </div>
+        </header>
     )
 }
 
