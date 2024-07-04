@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-import logo from 
+import logo from "./assets/logo/logo-pink.png"
 
 function Header() {
     return (
         <div className="Header">
             <div className="logo">
-                
+                <img src={logo} />
             </div>
 
             <div className= "navbar" >
