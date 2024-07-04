@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0vh 3vh 0vh;
+
+    p{
+        color: white;
+        padding: 4vh 0vh 0vh 0vh;
+    }
+}
