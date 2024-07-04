@@ -6,7 +6,6 @@ import Error from "./pages/Error"
 import Rentals from "./pages/Rentals"
 import About from "./pages/About"
 
-
 function App() {
   return (
     <div className="main-app">
