@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom"
+import logo from 
+
+function Header() {
+    return (
+        <div className="Header">
+            <div className="logo">
+                
+            </div>
+
+            <div className= "navbar" >
+                <nav>
+                <Link to="/" > Accueil </Link>
+                < Link to = "/A-propos" > A propos </Link>
+                </nav>
+            </div>
+        </div>
+    )
+}
+
+export default Header
