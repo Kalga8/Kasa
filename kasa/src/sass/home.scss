@@ -1,5 +1,9 @@
 .homeBody {
-    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 0% 5%;
 
     .sectionCards {
         display: flex;

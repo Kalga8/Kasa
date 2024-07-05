@@ -7,12 +7,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+.main-app{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
-}
-
-.main-app{
-    max-width: 1440px;
 }
