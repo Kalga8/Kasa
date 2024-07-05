@@ -1,6 +1,7 @@
 import Banner from "../components/Banner"
 import Card from "../components/Cards"
 import background from "../assets/banners/banner-home.png"
+import rentalsData from "../data/advertisement.json"
 
 function Home() {
     return(
@@ -10,9 +11,16 @@ function Home() {
             background={background}
             />
 
-            <div cardsContainer>
-                <Card 
-                />
+            <div className="sectionCards">
+                <div className="cardsContainer">
+                    {rentalsData.map((rental) => (
+                        <Card
+                        key={'${rental.id}'}
+                        title={rental.title}
+                        cover={rental.cover}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )

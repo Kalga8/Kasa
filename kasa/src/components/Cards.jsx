@@ -1,10 +1,15 @@
-import rentalsData from "../data/advertisement.json"
-
 function Card({title, cover}) {
     return(
-        <div className="cardContainer">
-            <img src={cover} />
-            <span> {title} </span>
+        <div className="cardsBackground">
+            <div className="cardBlock">
+                <div className="imageContainer">
+                    <img src={cover} alt=""/>
+                </div>
+
+                <div className="titleCard">
+                <h3> {title} </h3>
+                </div>
+            </div>
         </div>
     )
 }
