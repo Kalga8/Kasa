@@ -1,18 +1,24 @@
-.sectionCards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.homeBody {
+    max-width: 1440px;
 
-    .cardsContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 3%;
+    .sectionCards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #F6F6F6;
         border-radius: 25px;
-        padding: 3%;
-        margin: 2%;
-        width: 85%;
-        height: fit-content;
+        margin: 2% 0%;
+        width: 100%;
+    
+        .cardsContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 3%;
+            gap: 3vw;
+            width: calc(100vw);
+        }
     }
 }
+
+
 

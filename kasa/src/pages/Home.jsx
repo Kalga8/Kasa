@@ -5,7 +5,7 @@ import rentalsData from "../data/advertisement.json"
 
 function Home() {
     return(
-        <div homeBody>
+        <div className="homeBody">
             <Banner 
             title="Chez vous, partout ailleurs"
             background={background}

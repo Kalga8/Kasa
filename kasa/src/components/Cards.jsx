@@ -1,7 +1,7 @@
 function Card({title, cover}) {
     return(
-        <div className="cardsBackground">
             <div className="cardBlock">
+                <div className="imageEffect" />
                 <div className="imageContainer">
                     <img src={cover} alt=""/>
                 </div>
@@ -10,7 +10,6 @@ function Card({title, cover}) {
                 <h3> {title} </h3>
                 </div>
             </div>
-        </div>
     )
 }
 
