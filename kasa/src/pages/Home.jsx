@@ -9,7 +9,6 @@ function Home() {
             title="Chez vous, partout ailleurs"
             background={background}
             />
-            
 
             <div cardsContainer>
                 <Card 
