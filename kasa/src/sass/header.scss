@@ -14,21 +14,19 @@ header {
         width: 30vh;
         height: fit-content;
 
-    }
-
-        .logo img {
+        img {
             width: 100%;
             filter: drop-shadow(2px 1px 2px #9d9da7);
         }
+    }
 
     .navbar {
         display: flex;
         align-items: center;
         width: 100%;
         justify-content: flex-end;
-    }
 
-        .navbar a {
+        a {
             text-decoration: none;
             color: black;
             padding-right: 5vh;
@@ -36,8 +34,8 @@ header {
             filter: drop-shadow(1px 2px 2px #9d9da7);
         }
 
-            .navbar a:hover {
-                text-decoration: underline black;
-            }
-
+        a:hover {
+            text-decoration: underline black;
+        }
+    }      
 }
