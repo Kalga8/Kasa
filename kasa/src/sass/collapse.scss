@@ -2,18 +2,27 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-top: 4vh;
+    margin: 4vh 0vh;
 
         .collapseTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #ff6060;
         padding: 2vh;
+        margin-top: 2vh;
         color: white;
         border-radius: 5px;
         font-weight: 600;
         font-size: x-large;
+
+            .arrowBack {
+                height: fit-content;
+            }
         }
 
         .collapseText {
+            display: flex;
             background-color: #f6f6f6;
             margin-bottom: 2vh;
             border-radius: 5px;

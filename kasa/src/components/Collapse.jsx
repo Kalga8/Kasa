@@ -1,18 +1,25 @@
-import {useState} from "react"
+import { useState } from "react";
+
+import ArrowBackDown from "../assets/arrows/arrow-back_down.png";
+import ArrowBackUp from "../assets/arrows/arrow-back_up.png";
 
 function Collapse ({title, text}) {
-    const [active, setActive] = useState(false)
-    const handleToggle = e => {
-        setActive(!active)
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleArrow = () => {
+        setIsOpen(!isOpen);
     }
 
     return(
-        <div className={'collapse ${active && "active"}'}>
-                <div className="collapseTitle" onClick={handleToggle}>{title}
-                    <span className="arrowBackDown"></span>
+        <div className="collapesContainer">
+                <div className="collapseTitle" onClick={toggleArrow}> {title}
+                    <img
+                    src={isOpen ? ArrowBackDown : ArrowBackUp}
+                    alt="Arrow"
+                    className="arrowBack"
+                    />
                 </div>
                 <div className="collapseText">{text}</div>
-            </div>
+        </div>
     )
 }
 
