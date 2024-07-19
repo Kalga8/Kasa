@@ -1,7 +1,7 @@
 .collapseContainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     margin-top: 4vh;
 
         .collapseTitle {
@@ -17,6 +17,8 @@
             background-color: #f6f6f6;
             margin-bottom: 2vh;
             border-radius: 5px;
+            padding: 2vh 3vh;
             font-size: large;
+            text-align: justify;
         }
 }
