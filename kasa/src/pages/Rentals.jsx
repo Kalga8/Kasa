@@ -1,7 +1,9 @@
+import Carousel from "../components/Carousel"
+
 function Rentals() {
     return (
-        <div>
-            <p>Rentals</p>
+        <div className="carouselContainer">
+            <Carousel/>
         </div>
     )
 }
