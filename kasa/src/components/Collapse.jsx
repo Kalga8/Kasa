@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import ArrowBackDown from "../assets/arrows/arrow-back_up.png";
 import ArrowBackUp from "../assets/arrows/arrow-back_down.png";
 
 function Collapse ({title, text}) {
@@ -15,10 +14,10 @@ function Collapse ({title, text}) {
                     <img
                     src= {ArrowBackUp}
                     alt="Arrow"
-                    className= {isOpen ? "arrowBackDown" : "arrowBackUp"}
+                    className= {isOpen ? "arrowBackUp" : "arrowBackDown" }
                     />
                 </div>
-                <div className={isOpen ? "collapseText" : "collapseTextOpen"}>
+                <div className={isOpen ? "collapseTextOpen" : "collapseText"}>
                     {text}</div>
         </div>
     )
