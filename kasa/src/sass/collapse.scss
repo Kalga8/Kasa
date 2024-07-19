@@ -18,15 +18,23 @@
         font-weight: 600;
         font-size: x-large;
 
-            .arrowBack {
+            .arrowBackDown {
                 height: fit-content;
+                transition: 1s;
+                transform: rotate(180deg);
+            }
+
+            .arrowBackUp {
+                transition: 1s;
+            }
+
+            .arrowBack:hover{
+                cursor: pointer;
             }
         }
 
         .collapseText{
             display: none;
-            height: 0vh;
-            transition: height 5s ease-out;
         }
 
         .collapseTextOpen {
@@ -37,7 +45,6 @@
             padding: 2vh 3vh;
             font-size: large;
             text-align: justify;
-            height: 5vh;
         }
     }
 }

@@ -13,9 +13,9 @@ function Collapse ({title, text}) {
         <div className="collapsesContainer">
                 <div className="collapseTitle" onClick={toggleArrow}> {title}
                     <img
-                    src={isOpen ? ArrowBackDown : ArrowBackUp}
+                    src= {ArrowBackUp}
                     alt="Arrow"
-                    className="arrowBack"
+                    className= {isOpen ? "arrowBackDown" : "arrowBackUp"}
                     />
                 </div>
                 <div className={isOpen ? "collapseText" : "collapseTextOpen"}>
