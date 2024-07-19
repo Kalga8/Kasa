@@ -16,6 +16,7 @@ function Home() {
                     {rentalsData.map((rental) => (
                         <Card
                         key={'${rental.id}'}
+                        id={rental.id}
                         title={rental.title}
                         cover={rental.cover}
                         />
