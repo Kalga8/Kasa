@@ -4,6 +4,8 @@
     width: 80%;
     margin: 4vh 0vh;
 
+    .collapsesContainer {
+
         .collapseTitle {
         display: flex;
         justify-content: space-between;
@@ -21,7 +23,13 @@
             }
         }
 
-        .collapseText {
+        .collapseText{
+            display: none;
+            height: 0vh;
+            transition: height 5s ease-out;
+        }
+
+        .collapseTextOpen {
             display: flex;
             background-color: #f6f6f6;
             margin-bottom: 2vh;
@@ -29,5 +37,7 @@
             padding: 2vh 3vh;
             font-size: large;
             text-align: justify;
+            height: 5vh;
         }
+    }
 }

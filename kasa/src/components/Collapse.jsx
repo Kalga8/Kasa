@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import ArrowBackDown from "../assets/arrows/arrow-back_down.png";
-import ArrowBackUp from "../assets/arrows/arrow-back_up.png";
+import ArrowBackDown from "../assets/arrows/arrow-back_up.png";
+import ArrowBackUp from "../assets/arrows/arrow-back_down.png";
 
 function Collapse ({title, text}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ function Collapse ({title, text}) {
     }
 
     return(
-        <div className="collapesContainer">
+        <div className="collapsesContainer">
                 <div className="collapseTitle" onClick={toggleArrow}> {title}
                     <img
                     src={isOpen ? ArrowBackDown : ArrowBackUp}
@@ -18,7 +18,8 @@ function Collapse ({title, text}) {
                     className="arrowBack"
                     />
                 </div>
-                <div className="collapseText">{text}</div>
+                <div className={isOpen ? "collapseText" : "collapseTextOpen"}>
+                    {text}</div>
         </div>
     )
 }
