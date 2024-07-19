@@ -15,6 +15,7 @@ function Home() {
                 <div className="cardsContainer">
                     {rentalsData.map((rental) => (
                         <Card
+                        key={rental.id}
                         id={rental.id}
                         title={rental.title}
                         cover={rental.cover}

@@ -4,6 +4,7 @@ import {useState} from "react"
 
 function Carousel({ pictures }) {
   /*Fonctionnement slider*/
+  console.log(pictures)
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToPreviousSlide = () => {
@@ -21,6 +22,7 @@ function Carousel({ pictures }) {
   return (
     <div className="slideContainer">
       {/*Flèches de navigation*/}
+      {pictures.length > 1 && (
         <div className="slides-navigation">
             <img
             className="navigation-back"
@@ -35,6 +37,7 @@ function Carousel({ pictures }) {
             onClick={goToNextSlide}
             />
         </div>
+      )}
 
         {/*Slide*/}
         <div className="slider">
