@@ -7,13 +7,34 @@
     .titleHost {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .tagsRatings {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 4vh 0vh;
+        margin: 5vh 0vh;
+
+        .tags {
+            display: flex;
+            gap: 2vh;
+
+            span{
+            background-color: #ff6060;
+            color: white;
+            padding: 0.6vh 4vh;
+            border-radius: 1.2vh;
+            font-weight: 600;
+            }
+        }
+
+        .rate {
+            display: flex;
+            justify-content: end;
+            gap: 1vh;
+            width: 30vh;
+        }
     }
 
     .collapseRentals {
@@ -26,7 +47,7 @@
             overflow: hidden;
             opacity: 1;
         } 
-        
+
         p {
             padding: 0.2vh 0vh;
         }
