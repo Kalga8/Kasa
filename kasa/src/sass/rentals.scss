@@ -20,5 +20,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10vh;
+
+        .collapseTextOpen {
+            height: 16vh;
+            overflow: hidden;
+            opacity: 1;
+        } 
+        
+        p {
+            padding: 0.2vh 0vh;
+        }
     }
 }
