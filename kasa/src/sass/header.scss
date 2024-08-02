@@ -25,16 +25,20 @@ header {
         width: 100%;
         justify-content: flex-end;
 
+        nav {
+        display: flex;
+        gap: 5vh;
+
         a {
             text-decoration: none;
             color: black;
-            padding-right: 5vh;
             font-size: 24px;
             filter: drop-shadow(1px 2px 2px #9d9da7);
         }
 
         a:hover {
             text-decoration: underline black;
+        }
         }
     }      
 }
