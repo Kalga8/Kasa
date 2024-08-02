@@ -52,7 +52,12 @@
         font-size: large;
         text-align: justify;
         transition: height 0.6s ease-in-out, opacity 1s;
-        height: 8vh;
+        height: 16vh;
+        overflow: hidden;
         opacity: 1;
+
+        p {
+            padding: 0.2vh 0vh;
+        }
     }
 }

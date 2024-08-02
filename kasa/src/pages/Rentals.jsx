@@ -17,7 +17,7 @@ function Rentals() {
                 <Carousel
                 pictures={selectedRental.pictures}
                 />
-                
+            <div className="titleHost">
                 <TitleRentals
                 title={selectedRental.title}
                 location={selectedRental.location}/>
@@ -26,13 +26,17 @@ function Rentals() {
                 name={selectedRental.host.name}
                 picture={selectedRental.host.picture}
                 />
+            </div>
 
+            <div className="tagsRatings">
                 <Tags
                 tags={selectedRental.tags}/>
 
                 <Rates 
                 rating={selectedRental.rating}/>
+            </div>
 
+            <div className="collapseRentals">
                 <Collapse
                 title={"Description"}
                 text={selectedRental.description}/>
@@ -40,6 +44,7 @@ function Rentals() {
                 <Collapse
                 title={"Équipements"}
                 text={selectedRental.equipments}/>
+            </div>
         </div>
     )
 }

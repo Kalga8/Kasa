@@ -3,4 +3,22 @@
     flex-direction: column;
     width: 90%;
     justify-content: center;
+
+    .titleHost {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tagsRatings {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4vh 0vh;
+    }
+
+    .collapseRentals {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10vh;
+    }
 }

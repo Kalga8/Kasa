@@ -8,6 +8,14 @@ function Collapse ({title, text}) {
         setIsOpen(!isOpen);
     }
 
+    if (typeof text === "string") {
+		text = <p>{text}</p>;
+	} else if (Array.isArray(text)) {
+		text = text.map((item, index) => (
+			<p key={index}>{item}</p>
+		));
+	}
+
     return(
         <div className="collapsesContainer">
                 <div className="collapseTitle" onClick={toggleArrow}> {title}
