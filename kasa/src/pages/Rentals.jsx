@@ -5,6 +5,7 @@ import TitleRentals from "../components/TitleRentals"
 import Host from "../components/Host"
 import Tags from "../components/Tags"
 import Rates from "../components/Rates"
+import Collapse from "../components/Collapse"
 
 function Rentals() {
     const {id}=useParams(); /*Hook récupérant l'id depuis URL*/
@@ -31,6 +32,14 @@ function Rentals() {
 
                 <Rates 
                 rating={selectedRental.rating}/>
+
+                <Collapse
+                title={"Description"}
+                text={selectedRental.description}/>
+
+                <Collapse
+                title={"Équipements"}
+                text={selectedRental.equipments}/>
         </div>
     )
 }
