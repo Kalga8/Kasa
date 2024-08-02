@@ -4,6 +4,7 @@ import rentalsData from "../data/advertisement.json"
 import TitleRentals from "../components/TitleRentals"
 import Host from "../components/Host"
 import Tags from "../components/Tags"
+import Rates from "../components/Rates"
 
 function Rentals() {
     const {id}=useParams(); /*Hook récupérant l'id depuis URL*/
@@ -27,6 +28,9 @@ function Rentals() {
 
                 <Tags
                 tags={selectedRental.tags}/>
+
+                <Rates 
+                rating={selectedRental.rating}/>
         </div>
     )
 }
