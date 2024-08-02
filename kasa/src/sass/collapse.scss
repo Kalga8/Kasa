@@ -1,58 +1,117 @@
-.collapseContainer {
+@media screen and (min-width: 769px) {
+  .collapseContainer {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 4vh 0vh;
-}
+  }
 
-.collapsesContainer {
-
+  .collapsesContainer {
     .collapseTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6060;
-    padding: 2vh;
-    color: white;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: x-large;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff6060;
+      padding: 2vh;
+      color: white;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: x-large;
 
-        .arrowBackDown {
-            height: fit-content;
-            transition: 1s;
-            transform: rotate(180deg);
-        }
+      .arrowBackDown {
+        height: fit-content;
+        transition: 1s;
+        transform: rotate(180deg);
+      }
 
-        .arrowBackUp {
-            transition: 1s;
-        }
+      .arrowBackUp {
+        transition: 1s;
+      }
 
-        .arrowBack:hover{
-            cursor: pointer;
-        }
+      .arrowBack:hover {
+        cursor: pointer;
+      }
     }
 
-    .collapseText{
-        background-color: #f6f6f6;
-        border-radius: 5px;
-        padding: 2vh 3vh;
-        font-size: large;
-        text-align: justify;
-        transition: height 1s ease-in-out, opacity 0.6s;
-        height: 0vh;
-        opacity: 0;
+    .collapseText {
+      background-color: #f6f6f6;
+      border-radius: 5px;
+      padding: 2vh 3vh;
+      font-size: large;
+      text-align: justify;
+      transition: height 1s ease-in-out, opacity 0.6s;
+      height: 0vh;
+      opacity: 0;
     }
 
     .collapseTextOpen {
-        background-color: #f6f6f6;
-        margin-bottom: 2vh;
-        border-radius: 5px;
-        padding: 2vh 3vh;
-        font-size: large;
-        text-align: justify;
-        transition: height 0.6s ease-in-out, opacity 1s;
-        height: max-content;
-        opacity: 1;
+      background-color: #f6f6f6;
+      margin-bottom: 2vh;
+      border-radius: 5px;
+      padding: 2vh 3vh;
+      font-size: large;
+      text-align: justify;
+      transition: height 0.6s ease-in-out, opacity 1s;
+      height: max-content;
+      opacity: 1;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapseContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4vh 0vh;
+  }
+
+  .collapsesContainer {
+    .collapseTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff6060;
+      padding: 1vh;
+      color: white;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: medium;
+
+      .arrowBackDown {
+        height: fit-content;
+        transition: 1s;
+        transform: rotate(180deg);
+      }
+
+      .arrowBackUp {
+        transition: 1s;
+      }
+
+      .arrowBack:hover {
+        cursor: pointer;
+      }
+    }
+
+    .collapseText {
+      background-color: #f6f6f6;
+      border-radius: 5px;
+      padding: 1.5vh 2vh;
+      font-size: medium;
+      text-align: justify;
+      height: 0vh;
+      opacity: 0;
+    }
+
+    .collapseTextOpen {
+      background-color: #f6f6f6;
+      margin-bottom: 2vh;
+      border-radius: 5px;
+      padding: 2vh 3vh;
+      font-size: medium;
+      text-align: justify;
+      height: max-content;
+      opacity: 1;
+    }
+  }
 }
