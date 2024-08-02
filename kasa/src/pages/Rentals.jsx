@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom"
 import Carousel from "../components/Carousel"
 import rentalsData from "../data/advertisement.json"
-import TitleRentals from "../components/TitleRentals";
-import Host from "../components/Host";
+import TitleRentals from "../components/TitleRentals"
+import Host from "../components/Host"
+import Tags from "../components/Tags"
 
 function Rentals() {
     const {id}=useParams(); /*Hook récupérant l'id depuis URL*/
@@ -23,6 +24,9 @@ function Rentals() {
                 name={selectedRental.host.name}
                 picture={selectedRental.host.picture}
                 />
+
+                <Tags
+                tags={selectedRental.tags}/>
         </div>
     )
 }
