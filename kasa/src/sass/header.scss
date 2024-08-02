@@ -1,4 +1,5 @@
-header {
+@media screen and (min-width: 769px) {
+  header {
     display: flex;
     flex-direction: row;
     height: 10vh;
@@ -9,36 +10,82 @@ header {
     padding: 0% 5%;
 
     .logo {
-        display: flex;
-        width: 30vh;
-        height: fit-content;
+      display: flex;
+      width: 30vh;
+      height: fit-content;
 
-        img {
-            width: 100%;
-            filter: drop-shadow(2px 1px 2px #9d9da7);
-        }
+      img {
+        width: 100%;
+        filter: drop-shadow(2px 1px 2px #9d9da7);
+      }
     }
 
     .navbar {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
 
-        nav {
+      nav {
         display: flex;
         gap: 5vh;
 
         a {
-            text-decoration: none;
-            color: black;
-            font-size: 24px;
-            filter: drop-shadow(1px 2px 2px #9d9da7);
+          text-decoration: none;
+          color: black;
+          font-size: 24px;
+          filter: drop-shadow(1px 2px 2px #9d9da7);
         }
 
         a:hover {
-            text-decoration: underline black;
+          text-decoration: underline black;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 90%;
+    justify-content: space-between;
+    margin: 2vh 0;
+    align-items: center;
+    padding: 0% 5%;
+
+    .logo {
+      display: flex;
+      width: 30vh;
+      height: fit-content;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+
+      nav {
+        display: flex;
+        gap: 4vh;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
         }
-    }      
+
+        a:hover {
+          text-decoration: underline black;
+        }
+      }
+    }
+  }
 }
