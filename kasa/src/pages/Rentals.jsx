@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import Carousel from "../components/Carousel"
 import rentalsData from "../data/advertisement.json"
 import TitleRentals from "../components/TitleRentals"
@@ -11,6 +11,11 @@ function Rentals() {
     const {id}=useParams(); /*Hook récupérant l'id depuis URL*/
     const selectedRental=rentalsData.find((appartement) =>
         appartement.id===id);
+
+    /*Gestion erreur id*/
+    if (!selectedRental) {
+        return <Navigate to="Error"/>
+    }
     
     return (
         <div className="informationsRentals">
