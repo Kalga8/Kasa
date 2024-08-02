@@ -1,27 +1,62 @@
-.errorMessage {
+@media screen and (min-width: 769px) {
+  .errorMessage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h2 {
-        font-size: 288px;
-        color: #FF6060;
-        padding-bottom: 10vh;
+      font-size: 288px;
+      color: #ff6060;
+      padding-bottom: 10vh;
     }
 
     p {
-        font-size: 36px;
-        color: #FF6060;
-        padding-bottom: 10vh;
+      font-size: 36px;
+      color: #ff6060;
+      padding-bottom: 10vh;
     }
 
     a {
-        color: black;
-        padding-bottom: 10vh;
+      color: black;
+      padding-bottom: 10vh;
     }
 
     a:hover {
-        text-decoration: underline black;
+      text-decoration: underline black;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .errorMessage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h2 {
+          font-size: 150px;
+          color: #ff6060;
+          padding: 10vh 0vh;
+        }
+    
+        p {
+          font-size: 20px;
+          color: #ff6060;
+          padding-bottom: 10vh;
+          width: 70%;
+          text-align: center;
+        }
+    
+        a {
+          color: black;
+          padding-bottom: 10vh;
+          font-weight: 500;
+        }
+    
+        a:hover {
+          text-decoration: underline black;
+        }
+      }
 }
