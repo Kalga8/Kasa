@@ -5,73 +5,78 @@
     width: 90%;
     justify-content: center;
 
-    .titleHost {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    .informationsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-      .label-container {
+      .titleTags {
         display: flex;
         flex-direction: column;
 
-        h1 {
-          color: #ff6060;
-          font-weight: 500;
-          font-size: 2.8rem;
-          padding-bottom: 1vh;
-        }
-
-        p {
-          font-weight: 500;
-          font-size: large;
-        }
-      }
-
-      .host-profil {
-        display: flex;
-        flex-direction: row;
-        text-align: end;
-        align-items: center;
-
-        p {
-          color: #ff6060;
-          font-weight: 500;
-          font-size: large;
-          padding-right: 2vh;
-        }
-
-        img {
+        .label-container {
           display: flex;
-          width: 8vh;
-          border-radius: 50vh;
+          flex-direction: column;
+
+          h1 {
+            color: #ff6060;
+            font-weight: 500;
+            font-size: 2.8rem;
+            padding-bottom: 1vh;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: large;
+          }
+        }
+
+        .tags {
+          display: flex;
+          gap: 2vh;
+          padding: 2vh 0vh;
+
+          span {
+            background-color: #ff6060;
+            color: white;
+            padding: 0.6vh 4vh;
+            border-radius: 1.2vh;
+            font-weight: 600;
+          }
         }
       }
-    }
 
-    .tagsRatings {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 3vh 0vh;
-
-      .tags {
+      .hostRatings {
         display: flex;
-        gap: 2vh;
+        flex-direction: column;
 
-        span {
-          background-color: #ff6060;
-          color: white;
-          padding: 0.6vh 4vh;
-          border-radius: 1.2vh;
-          font-weight: 600;
+        .host-profil {
+          display: flex;
+          flex-direction: row;
+          text-align: end;
+          align-items: center;
+          justify-content: end;
+          padding-bottom: 2vh;
+
+          p {
+            color: #ff6060;
+            font-weight: 500;
+            font-size: large;
+            padding-right: 2vh;
+          }
+
+          img {
+            display: flex;
+            width: 8vh;
+            border-radius: 50vh;
+          }
         }
-      }
 
-      .rate {
-        display: flex;
-        justify-content: end;
-        gap: 1vh;
-        width: 30vh;
+        .rate {
+          display: flex;
+          justify-content: end;
+          gap: 1vh;
+          width: 100%;
+        }
       }
     }
 
@@ -79,7 +84,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10vh;
-      padding-bottom: 5vh;
+      padding: 2vh 0vh 5vh 0vh;
 
       .collapseTextOpen {
         height: 16vh;
@@ -101,81 +106,91 @@
     width: 90%;
     justify-content: center;
 
-    .titleHost {
+    .informationsContainer {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
 
-      .label-container {
+      .titleTags {
         display: flex;
         flex-direction: column;
 
-        h1 {
-          color: #ff6060;
-          font-weight: 500;
-          font-size: 2.8rem;
-          padding-bottom: 1vh;
-        }
-
-        p {
-          font-weight: 500;
-          font-size: large;
-        }
-      }
-
-      .host-profil {
-        display: flex;
-        flex-direction: row;
-        text-align: end;
-        align-items: center;
-
-        p {
-          color: #ff6060;
-          font-weight: 500;
-          font-size: large;
-          padding-right: 2vh;
-        }
-
-        img {
+        .label-container {
           display: flex;
-          width: 8vh;
-          border-radius: 50vh;
+          flex-direction: column;
+
+          h1 {
+            color: #ff6060;
+            font-weight: 500;
+            font-size: 2.8rem;
+            padding-bottom: 1vh;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: large;
+          }
+        }
+
+        .tags {
+          display: flex;
+          gap: 2vh;
+          padding: 2vh 0vh;
+
+          span {
+            background-color: #ff6060;
+            color: white;
+            padding: 0.6vh 4vh;
+            border-radius: 1.2vh;
+            font-weight: 600;
+          }
         }
       }
-    }
 
-    .tagsRatings {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 3vh 0vh;
-
-      .tags {
+      .hostRatings {
         display: flex;
-        gap: 2vh;
+        flex-direction: row-reverse;
 
-        span {
-          background-color: #ff6060;
-          color: white;
-          padding: 0.6vh 4vh;
-          border-radius: 1.2vh;
-          font-weight: 600;
+        .host-profil {
+          display: flex;
+          flex-direction: row;
+          text-align: end;
+          align-items: center;
+          justify-content: end;
+          padding-bottom: 2vh;
+
+          p {
+            color: #ff6060;
+            font-weight: 500;
+            font-size: large;
+            padding-right: 2vh;
+          }
+
+          img {
+            display: flex;
+            width: 8vh;
+            border-radius: 50vh;
+          }
         }
-      }
 
-      .rate {
-        display: flex;
-        justify-content: end;
-        gap: 1vh;
-        width: 30vh;
+        .rate {
+          display: flex;
+          justify-content:baseline;
+          align-items: center;
+          gap: 1vh;
+          width: 100%;
+
+          .star {
+            display: flex;
+            height: 30%;
+          }
+        }
       }
     }
 
     .collapseRentals {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10vh;
-      padding-bottom: 5vh;
+      grid-template-columns: 1fr;
+      padding: 2vh 0vh;
 
       .collapseTextOpen {
         height: 16vh;
