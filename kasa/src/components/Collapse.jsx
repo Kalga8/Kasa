@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import ArrowBackUp from "../assets/arrows/arrow-back_down.png";
 
-function Collapse ({title, text}) {
+function Collapse ({id, title, text}) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleArrow = () => {
         setIsOpen(!isOpen);
@@ -17,7 +17,8 @@ function Collapse ({title, text}) {
 	}
 
     return(
-        <div className="collapsesContainer">
+        <div className="collapsesContainer"
+        key={id}>
                 <div className="collapseTitle" onClick={toggleArrow}> {title}
                     <img
                     src= {ArrowBackUp}

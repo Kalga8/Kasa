@@ -13,7 +13,7 @@ function About(){
             <div className="collapseContainer">
                 {collapseData.map((collapse) => (
                     <Collapse
-                    key={'${collapse.id}'}
+                    key={collapse.id}
                     title={collapse.title}
                     text={collapse.text}
                     />
